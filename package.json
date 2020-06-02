@@ -1,0 +1,56 @@
+{
+  "name": "react-parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "react-parcel-boilerplate",
+  "main": "public/index.html",
+  "keywords": [
+    "react",
+    "parcel",
+    "boilerplate"
+  ],
+  "author": {
+    "name": "Asif Vora"
+  },
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "typesync",
+    "dev": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.10.1",
+    "@types/node": "^10.7.0",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.7",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "regenerator-runtime": "^0.13.3",
+    "parcel-bundler": "1.10.0",
+    "husky": ">=1",
+    "lint-staged": ">=8",
+    "prettier": "^1.19.1",
+    "typescript": "^3.0.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
