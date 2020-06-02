@@ -2,6 +2,7 @@
   "name": "react-parcel-boilerplate",
   "version": "1.0.0",
   "description": "react-parcel-boilerplate",
+  "private": false,
   "main": "public/index.html",
   "keywords": [
     "react",
@@ -19,23 +20,51 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.1",
-    "react": "^16.6.3",
-    "react-dom": "^16.4.2"
+    "@sentry/browser": "^5.10.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "dayjs": "^1.8.17",
+    "mobx": "^5.15.1",
+    "mobx-react": "^6.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-icons": "^3.8.0",
+    "react-loading-skeleton": "^1.3.0",
+    "react-router-dom": "^5.1.2",
+    "react-toastify": "^5.4.1",
+    "react-use": "^13.12.2",
+    "styled-components": "^4.4.1",
+    "typescript": "~3.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.10.1",
-    "@types/node": "^10.7.0",
-    "@types/react": "^16.7.17",
-    "@types/react-dom": "^16.0.7",
-    "parcel-plugin-bundle-visualiser": "^1.2.0",
-    "regenerator-runtime": "^0.13.3",
-    "parcel-bundler": "1.10.0",
+    "@types/babel__core": "^7.1.8",
+    "@types/babel__preset-env": "^7.9.0",
+    "@types/classnames": "^2.2.9",
+    "@types/parcel-bundler": "^1.10.0",
+    "@types/prettier": "^1.19.0",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/styled-components": "^4.4.1",
+    "@types/testing-library__jest-dom": "^5.9.1",
+    "@types/testing-library__react": "^9.1.2",
+    "cross-env": "^6.0.3",
     "husky": ">=1",
     "lint-staged": ">=8",
+    "mobx-remotedev": "^0.3.6",
+    "parcel-bundler": "^1.10.0",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
     "prettier": "^1.19.1",
-    "typescript": "^3.0.1"
+    "regenerator-runtime": "^0.13.3",
+    "typesync": "^0.6.1"
   },
   "prettier": {
     "semi": false,
@@ -48,7 +77,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json,md}": [
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write",
       "git add"
     ]
