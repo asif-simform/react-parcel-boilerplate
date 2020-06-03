@@ -20,6 +20,10 @@
         "~/*": ["./src/*"]
     },
   },
+  "parcel-plugin-typescript": {
+    // If true type-checking is disabled
+    "transpileOnly": true
+  },
   "include": ["src/*"],
   "exclude": ["node_modules", ".vscode", "dist"]
 }
